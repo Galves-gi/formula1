@@ -1,0 +1,160 @@
+:root {
+    /* cores */
+    --cor-primaria: #E10600;
+    --cor-secundaria: #009739;
+    --cor-accento: #FFCC00;
+    --cor-preto: #222222;
+    --cor-branco: #F3F3F3;
+}
+
+/* tipografia */
+.titulo h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.75rem, 2.80vw, 2rem);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 2rem 0;
+}
+
+.subtitulo {
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    padding: 1.5rem 0;
+}
+
+.texto,
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.2rem, 1.30vw, 1.5rem);
+    text-align: justify;
+    color: var(--cor-branco);
+}
+
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(7, 125, 9) #bada55;
+    speak-as: literal-punctuation;
+    /* leitura do texto da pagina sera interpretado */
+}
+
+/* geral */
+body {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    min-width: 100vh;
+
+}
+
+/* reset */
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10%;
+}
+
+a {
+    text-decoration: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+i {
+    color: var(--cor-branco);
+}
+
+/* estilo da pagina */
+.flexivel {
+    display: flex;
+}
+
+.flexivel_linha-centro,
+.flexivel_coluna-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexivel_coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexivel_coluna-centro {
+    flex-direction: column;
+}
+
+.itemflex-50 {
+    flex: 0 0 50%;
+}
+
+.espaco_top {
+    padding: 3rem 0;
+}
+
+.espaco_lado {
+    padding: 0 3rem;
+}
+
+.borda {
+    border: 5px solid black;
+}
+
+/* estilo do index */
+header {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    padding: 1rem 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+header nav ul {
+    gap: 10%;
+    color: var(--cor-preto);
+}
+
+header nav ul li a {
+    color: var(--cor-preto);
+}
+
+/* rodape */
+footer {
+    background-color: var(--cor-secundaria);
+}
+
+footer section {
+    padding: 1rem 10rem;
+}
+
+footer section div nav ul {
+    gap: 5%;
+}
+
+footer h5 {
+    background-color: black;
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 1rem;
+}
