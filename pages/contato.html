@@ -12,24 +12,81 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
-    <title>Museu F1</title>
+    <link rel="stylesheet" href="/css/pages.css">
+    <title>Museu F1 - Contato</title>
 </head>
 
 <body>
     <!-- cabeçalho -->
     <header class="flexivel">
-        <!-- logo -->
         <img src="/assets/logo.png" alt="logo do museu escrito museuF1 nas cores preto, verde, amarelo e vermelho"
             class="logo" loading="eager">
         <nav>
             <ul class="flexivel_linha-centro">
-                <li class="menu_link anima_zoom"><a href="../index.html">Index</a></li>
+                <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
                 <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
                 <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- hero section -->
+    <article class="hero_section-contato">
+        <div class="hero_section_contato-frase">
+            <h1 class="titulo">Entre em contato e planeje sua visita <br>ao universo da Fórmula 1.</h1>
+        </div>
+    </article>
+
+    <!-- Seção Contato -->
+    <section class="contato flexivel">
+        <!-- Formulário de contato -->
+        <div class="itemflex-50">
+            <h2 class="subtitulo texto-centro">Entre em Contato</h2>
+            <form class="formulario flexivel_coluna">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required minlength="3">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required maxlength="255">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="4" rows="10" required maxlength="500"></textarea>
+
+                <button class="btn botao-destaque">Enviar</button>
+            </form>
+
+        </div>
+
+        <!-- Informações de contato -->
+        <div class="itemflex-50">
+            <h2 class="subtitulo">Informações</h2>
+            <address>
+                <p><strong>Museu F1 Elite</strong></p>
+                <p>Avenida da Velocidade, 1234<br>
+                    São Paulo - SP, Brasil</p>
+                <p>Telefone: +5511999999999</p>
+                <p>E-mail: contato@museuf1.com</p>
+            </address>
+            <!-- redes sociais -->
+            <nav>
+                <h3 class="subtitulo">Siga-nos</h3>
+                <ul class="flexivel">
+                    <li class="anima_zoom"><i class="bi bi-facebook rede-contato"></i></li>
+                    <li class="anima_zoom"><i class="bi bi-twitter rede-contato"></i></li>
+                    <li class="anima_zoom"><i class="bi bi-instagram rede-contato"></i></li>
+                    <li class="anima_zoom"><i class="bi bi-youtube rede-contato"></i></li>
+                </ul>
+            </nav>
+            <!-- mapa -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8165583784803!2d-43.939659425149635!3d-19.932133638374214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699dc4b5f2ffb%3A0x559a742d9e74e35b!2sCentro%20Cultural%20Banco%20do%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1755529046207!5m2!1spt-BR!2sbr"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="espaco_top"></iframe>
+        </div>
+
+    </section>
+
 
     <!-- rodape -->
     <footer class="flexivel_coluna">
@@ -41,10 +98,10 @@
                 <!-- links redes sociais -->
                 <nav>
                     <ul class="flexivel">
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-twitter espaco_lado"></i></li>
-                        <li><i class="bi bi-instagram"></i></li>
-                        <li><i class="bi bi-youtube espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-facebook"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-twitter espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-instagram"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-youtube espaco_lado"></i></li>
                     </ul>
                 </nav>
             </div>
@@ -52,14 +109,14 @@
             <nav class="flexivel_linha-centro itemflex-50">
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
-                    <li class="menu_link anima_zoom">Links Rápidos</li>
+                    <li class="menu_link">Links Rápidos</li>
                     <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
                     <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
                     <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
                     <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
                 </ul>
                 <!-- endereço do museu -->
-                <a href="#">
+                <a href="#" class="anima_zoom">
                     <address>
                         <strong>MuseuF1 Brasil</strong><br><br>
                         Av. Pole Position, 1234 – Bloco B<br>

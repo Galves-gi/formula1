@@ -136,6 +136,23 @@
     object-fit: cover;
 }
 
+/* sobre: galeria */
+.galeria {
+    padding: 0 10rem 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-contraste);
+}
+
+.galeria-img {
+    width: 20vw;
+    height: 40vh;
+}
+
 /* pagina atrações */
 .hero_section-atracao {
     height: 100vh;
@@ -175,4 +192,66 @@
 
 .atracao_destaque-texto>a {
     width: 50%;
+}
+
+/*pagina contato */
+.hero_section-contato {
+    height: 100vh;
+    padding: 5%;
+    background-image: url(/assets/img-fundo/bg-ayrton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.hero_section_contato-frase {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.hero_section_contato-frase>h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+/* formulario */
+.contato {
+    height: 100vh;
+    padding: 0 5rem;
+    gap: 5rem;
+    background-color: var(--cor-contraste);
+}
+
+.formulario {
+    gap: 1rem;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+input,
+textarea {
+    border-radius: 20px;
+    border: 2px solid var(--cor-detalhe);
+    padding: 1rem;
+}
+
+.formulario>button {
+    width: 30%;
+}
+
+.rede-contato {
+    color: var(--cor-detalhe);
+    font-size: 1.8rem;
+}
+
+iframe {
+    border-radius: 20px;
+    border: 2px solid var(--cor-detalhe);
 }
