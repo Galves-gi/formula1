@@ -9,8 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
+    <link rel="stylesheet" href="/css/pages.css">
     <title>Museu F1 - Sobre</title>
 </head>
 
@@ -22,25 +24,27 @@
             class="logo" loading="eager">
         <nav>
             <ul class="flexivel_linha-centro">
-                <li class="menu_link"><a href="../index.html">Index</a></li>
-                <li class="menu_link"><a href="/pages/sobre.html">Sobre</a></li>
-                <li class="menu_link"><a href="/pages/atracoes.html">Atrações</a></li>
-                <li class="menu_link"><a href="/pages/contato.html">Contato</a></li>
+                <li class="menu_link anima_zoom"><a href="../index.html">Index</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <!-- conteudo -->
+
     <!-- hero section -->
     <article class="hero_section-sobre">
         <div class="hero_section_sobre-frase">
             <h1 class="titulo">Um espaço dedicado à história, aos heróis e à magia da Fórmula 1.</h1>
         </div>
     </article>
+
+    <!-- conteudo -->
     <main>
+        <h2 class="titulo texto-centro espaco_top">Celebrando a paixão, a velocidade e o legado da Fórmula 1 no
+            Brasil</h2>
         <!-- texto -->
         <section class="texto_sobre">
-            <h2 class="titulo texto-centro espaco_top">Celebrando a paixão, a velocidade e o legado da Fórmula 1 no
-                Brasil</h2>
             <p class="espaco_top">
                 O Museu de Fórmula 1 do Brasil é um espaço dedicado a celebrar a paixão, a velocidade e o legado do
                 automobilismo no país. Aqui, visitantes de todas as idades podem explorar a trajetória dos maiores
@@ -58,29 +62,30 @@
                 esporte.
             </p>
         </section>
+
         <!-- linha do tempo -->
         <section class="flexivel_coluna-centro espaco_top">
             <h2 class="subtitulo">Linha do tempo da Formula 1</h2>
             <div class="linha_tempo">
                 <!-- evento -->
-                <div class="linha_tempo-evento flexivel_linha-centro">
-                    <img src="/assets/car antigo.jpg" alt="carro antigo" class="linha_tempo-img">
+                <div class="linha_tempo-evento flexivel_linha-centro anima_zoom">
+                    <img src="/assets/atracao/car antigo.jpg" alt="carro antigo" class="linha_tempo-img">
                     <div>
                         <h2 class="subtitulo">1950</h2>
                         <p>Primeira corrida de Fórmula 1 no Brasil.</p>
                     </div>
                 </div>
                 <!-- evento -->
-                <div class="linha_tempo-evento flexivel_linha-centro">
-                    <img src="/assets/autodromo.jpg" alt="carro moderno" class="linha_tempo-img">
+                <div class="linha_tempo-evento flexivel_linha-centro anima_zoom">
+                    <img src="/assets/atracao/autodromo.jpg" alt="carro moderno" class="linha_tempo-img">
                     <div>
                         <h2 class="subtitulo">1972</h2>
                         <p>Primeiro campeonato brasileiro de Fórmula 1.</p>
                     </div>
                 </div>
-                <!-- evento 3 -->
-                <div class="linha_tempo-evento flexivel_linha-centro">
-                    <img src="/assets/campeos.jpg" alt="carro f1" class="linha_tempo-img">
+                <!-- evento-->
+                <div class="linha_tempo-evento flexivel_linha-centro anima_zoom">
+                    <img src="/assets/atracao/campeos.jpg" alt="carro f1" class="linha_tempo-img">
                     <div>
                         <h2 class="subtitulo">2000</h2>
                         <p>Era de ouro de pilotos brasileiros na Fórmula 1.</p>
@@ -88,13 +93,14 @@
                 </div>
 
                 <!-- evento 4 -->
-                <div class="linha_tempo-evento flexivel_linha-centro">
-                    <img src="/assets/hamilton.jpg" alt="carro atual" class="linha_tempo-img">
+                <div class="linha_tempo-evento flexivel_linha-centro anima_zoom">
+                    <img src="/assets/atracao/hamilton.jpg" alt="carro atual" class="linha_tempo-img">
                     <div>
                         <h2 class="subtitulo">2025</h2>
                         <p>Novas tecnologias e circuitos no Brasil.</p>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -108,10 +114,10 @@
                 <!-- links redes sociais -->
                 <nav>
                     <ul class="flexivel">
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-twitter espaco_lado"></i></li>
-                        <li><i class="bi bi-instagram"></i></li>
-                        <li><i class="bi bi-youtube espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-facebook"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-twitter espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-instagram"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-youtube espaco_lado"></i></li>
                     </ul>
                 </nav>
             </div>
@@ -120,13 +126,13 @@
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
-                    <li class="menu_link"><a href="../index.html">Início</a></li>
-                    <li class="menu_link"><a href="/pages/sobre.html">Sobre</a></li>
-                    <li class="menu_link"><a href="/pages/atracoes.html">Atrações</a></li>
-                    <li class="menu_link"><a href="/pages/contato.html">Contato</a></li>
+                    <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
                 </ul>
                 <!-- endereço do museu -->
-                <a href="#">
+                <a href="#" class="anima_zoom">
                     <address>
                         <strong>MuseuF1 Brasil</strong><br><br>
                         Av. Pole Position, 1234 – Bloco B<br>

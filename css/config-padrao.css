@@ -44,16 +44,14 @@ p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     scrollbar-color: rgb(7, 125, 9) #ffffff;
 }
 
-/* geral */
 body {
     background-color: var(--cor-branco);
     color: black;
     min-width: 100vh;
-
+    scroll-behavior: smooth;
 }
 
 /* reset */
@@ -76,6 +74,7 @@ a {
 figure img {
     max-width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 i {
@@ -118,33 +117,43 @@ i {
 .espaco_lado {
     padding: 0 3rem;
 }
-
-.borda {
-    border: 5px solid black;
-}
-
+/* botão */
 .btn {
-    padding: 2% 3%;
+    padding: 2% 4%;
     font-size: 1.3rem;
     text-align: center;
     font-weight: bold;
     border-radius: 20px;
+    transition: .3s ease;
+}
+.botao-destaque {
     background-color: var(--cor-detalhe);
     color: white;
 }
 
-.btn:hover {
+.botao-destaque:hover {
     background-color: var(--cor-accento);
     border: 3px solid var(--cor-detalhe);
-    color: var(--cor-detalhe);
+    color: black;
+}
+
+.botao-secundario {
+    background-color: var(--cor-contraste);
+    color: black;
+    border: 3px solid var(--cor-detalhe);
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-accento);
+    border: 3px solid var(--cor-detalhe);
 }
 
 .texto-centro {
     text-align: center;
     width: 100%;
-
 }
 
+/* animação */
 .anima_zoom {
     transition: transform 0.3s ease;
 }
@@ -153,7 +162,14 @@ i {
     transform: scale(1.1);
 }
 
-/* estilo */
+.anima_diminuir {
+    transition: transform 0.3s ease;
+}
+
+.anima_diminuir:hover {
+    transform: scale(0.9);
+}
+
 /* cabeçalho */
 header {
     background-color: var(--cor-branco);
@@ -164,6 +180,7 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -178,11 +195,13 @@ header nav ul {
 header nav ul li a {
     color: var(--cor-preto);
     font-size: 1.5rem;
-    transition: font-size 0.3s ease;
+    transition: border-bottom 0.3s ease;
 }
 
 header nav ul li a:hover {
-    font-size: 1.8rem;
+    color: var(--cor-detalhe);
+    font-weight: bold;
+    border-bottom: 3px solid var(--cor-detalhe);
 }
 
 /* rodape */
@@ -213,159 +232,4 @@ footer h5 {
     color: var(--cor-branco);
     text-align: center;
     font-size: 1rem;
-}
-
-/* index */
-main {
-    height: 100%;
-    padding: 0 5rem;
-}
-
-section {
-    height: 100%;
-}
-
-.hero_section-index {
-    background-image: url('/assets/bg-carro.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-
-    width: 100%;
-    height: 100vh;
-}
-
-.hero_section-frase {
-    background-color: var(--cor-contraste);
-    color: var(--cor-primaria);
-    padding: 2rem;
-    border-radius: 20px;
-    text-align: center;
-
-}
-
-.hero_section-frase h1 {
-    font-size: clamp(3rem, 4vw, 2.50rem);
-}
-
-.hero_section-frase p {
-    font-size: clamp(1.5rem, 2vw, 1.75rem);
-    color: var(--cor-primaria);
-}
-
-/* atrações */
-.atracoes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 0 0 5vh 0;
-}
-
-.cartao_atracao {
-    width: 48%;
-    max-height: 30vh;
-    justify-content: space-between;
-    border-radius: 20px;
-    border: 3px solid var(--cor-detalhe);
-}
-
-.cartao_imagem {
-    max-width: 100%;
-    height: 100%;
-    border-radius: 18px 0 0 18px;
-}
-
-.cartao_conteudo {
-    padding: 0 10px;
-    flex: 0 0 75%;
-
-}
-
-.cartao_conteudo h3 {
-    padding: 0;
-
-}
-
-.cartao_conteudo button {
-    padding: 1% 3%;
-    font-size: 1rem;
-}
-
-/* sobre */
-.hero_section-sobre {
-    background-image: url('/assets/ferrari.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    width: 100%;
-    height: 100vh;
-}
-
-.hero_section_sobre-frase {
-    width: 40%;
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.hero_section_sobre-frase h1 {
-    color: white;
-    font-size: clamp(3rem, 4vw, 2.50rem);
-}
-
-/* texto sobre */
-.texto_sobre {
-    height: 80vh;
-    padding: 0 10rem;
-}
-
-.linha_tempo {
-    margin-bottom: 20px;
-    height: 100%;
-    gap: 10px;
-}
-
-.linha_tempo-evento {
-    margin-bottom: 20px;
-}
-
-.linha_tempo-img {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* atrações */
-.hero_section-atracao {
-    background-image: url('/assets/bg-car.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    width: 100%;
-    height: 100vh;
-}
-
-.hero_section_atracao-frase {
-    width: 40%;
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.hero_section_atracao-frase h1 {
-    color:var(--cor-accento);
-    font-size: clamp(3rem, 4vw, 2.50rem);
 }

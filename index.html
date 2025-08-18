@@ -5,132 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
+    <link rel="stylesheet" href="/css/pages.css">
     <title>Museu F1</title>
 </head>
 
 <body>
     <!-- cabeçalho -->
     <header class="flexivel">
-        <!-- logo -->
         <img src="/assets/logo.png" alt="logo do museu escrito museuF1 nas cores preto, verde, amarelo e vermelho"
             class="logo" loading="eager">
         <nav>
             <ul class="flexivel_linha-centro">
-                <li class="menu_link"><a href="../index.html">Index</a></li>
-                <li class="menu_link"><a href="/pages/sobre.html">Sobre</a></li>
-                <li class="menu_link"><a href="/pages/atracoes.html">Atrações</a></li>
-                <li class="menu_link"><a href="/pages/contato.html">Contato</a></li>
+                <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
+                <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <!-- conteudo -->
-
     <!-- hero section -->
-    <article class="hero_section-index flexivel_linha-centro ">
-        <div class="hero_section-frase">
-            <h1 class="titulo">Velocidade, História e Paixão</h1>
-            <p class="subtitulo">Descubra o legado da Fórmula 1 no Brasil</p>
-            <button class="espaco_top btn"><a href="/pages/contato.html">Agende sua visita</a></button>
+    <article class="hero_section-index">
+        <div class="hero_section_index-frase">
+            <h1 class="titulo">Um espaço dedicado à história, aos heróis e à magia da Fórmula 1.</h1>
+            <nav class="hero_section-btn flexivel">
+                <a href="/pages/atracoes.html" class="btn botao-destaque">Conheça Nossa Atrações</a>
+                <a href="/pages/atracoes.html" class="btn botao-secundario">Entre Em Contato</a>
+            </nav>
+
         </div>
     </article>
-
+    <!-- conteudo -->
     <main>
-        <!-- atracoes -->
-        <h1 class="titulo texto-centro espaco_top">Atrações em Destaque</h2>
-            <section class="atracoes">
-                <!-- cartões -->
-                <article class="cartao_atracao flexivel anima_zoom">
-                    <figure>
-                        <img src="/assets/car antigo.jpg" alt="Carro Histórico F1" class="cartao_imagem">
-                        <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
-                    </figure>
-                    <!-- conteudo do cartao -->
-                    <div class="cartao_conteudo flexivel_coluna-centro">
-                        <h3 class="subtitulo">Carros Históricos</h3>
-                        <p>Explore a coleção de carros que marcaram a história da Fórmula 1 no Brasil, desde clássicos
-                            até
-                            modelos modernos.</p>
-                        <button class="btn"><a href="/pages/atracoes.html">Saiba Mais</a></button>
-                    </div>
-                </article>
+        <!-- cartao de atrações-->
+        <section class="cartao_index">
+            <h2 class="titulo espaco_top">Conheça Nossas Atrações</h2>
+            <div class="flexivel_linha-centro">
                 <!-- cartao -->
-                <article class="cartao_atracao flexivel anima_zoom">
+                <article class="cartao_atracao-index flexivel_coluna anima_zoom">
                     <figure>
-                        <img src="/assets/ayrton.jpg" alt="foto ayrton senna" class="cartao_imagem">
-                        <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
-                    </figure>
-                    <!-- conteudo do cartao -->
-                    <div class="cartao_conteudo flexivel_coluna-centro">
-                        <h3 class="subtitulo">Homenagem a Ayrton Senna</h3>
-                        <p>Descubra a trajetória de Ayrton Senna, seus grandes feitos na Fórmula 1 e o legado que ele
-                            deixou.</p>
-                        <button class="btn "><a href="/pages/atracoes.html">Saiba Mais</a></button>
-                    </div>
-                </article>
-                <!-- cartao -->
-                <article class="cartao_atracao flexivel anima_zoom">
-                    <figure>
-                        <img src="/assets/simulador.jpg" alt="simulador Carro F1" class="cartao_imagem">
-                        <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
-                    </figure>
-                    <!-- conteudo do cartao -->
-                    <div class="cartao_conteudo flexivel_coluna-centro">
-                        <h3 class="subtitulo">Simulador de Corrida</h3>
-                        <p>Viva a experiência de pilotar um carro de Fórmula 1 sem sair do lugar.
-                            Sinta a velocidade, curvas e adrenalina de uma pista real.</p>
-                        <button class="btn "><a href="/pages/atracoes.html">Saiba Mais</a></button>
-                    </div>
-                </article>
-                <!-- cartao -->
-                <article class="cartao_atracao flexivel anima_zoom">
-                    <figure>
-                        <img src="/assets/felipe massa.jpg" alt="Troféus de Felipe Massa" class="cartao_imagem">
-                        <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
-                    </figure>
-                    <!-- conteudo do cartao -->
-                    <div class="cartao_conteudo flexivel_coluna-centro">
-                        <h3 class="subtitulo">Troféus de Felipe Massa</h3>
-                        <p>Conheça a coleção de troféus conquistados por Felipe Massa ao longo de sua carreira na
-                            Fórmula 1.
-                        </p>
-                        <button class="btn "><a href="/pages/atracoes.html">Saiba Mais</a></button>
-                    </div>
-                </article>
-                <!-- cartao -->
-                <article class="cartao_atracao flexivel anima_zoom">
-                    <figure>
-                        <img src="/assets/mp4.jpg" alt="simulador Carro F1" class="cartao_imagem">
+                        <img src="/assets/atracao/car antigo.jpg" alt="simulador Carro F1" class="cartao_imagem">
                         <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
                     </figure>
                     <!-- conteudo do cartao -->
                     <div class="cartao_conteudo flexivel_coluna-centro">
                         <h3 class="subtitulo">O Carro que Fez História</h3>
-                        <p>Explore o icônico carro McLaren pilotado por Ayrton Senna durante suas vitórias lendárias.
+                        <p>Explore o icônico carro McLaren pilotado por Ayrton Senna durante suas vitórias
+                            lendárias.
                         </p>
-                        <button class="btn "><a href="/pages/atracoes.html">Saiba Mais</a></button>
+                        <button class="btn botao-destaque"><a href="/pages/atracoes.html">Saiba Mais</a></button>
                     </div>
                 </article>
-                <!-- cartao -->
-                <article class="cartao_atracao flexivel anima_zoom">
+                <article class="cartao_atracao-index flexivel_coluna anima_zoom">
                     <figure>
-                        <img src="/assets/atracao mulheres na f1.jpg" alt="mulheres na f1" class="cartao_imagem">
+                        <img src="/assets/atracao/atracao mulheres na f1.jpg" alt="mulheres na f1"
+                            class="cartao_imagem">
                         <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
                     </figure>
                     <!-- conteudo do cartao -->
                     <div class="cartao_conteudo flexivel_coluna-centro">
                         <h3 class="subtitulo">Mulheres na F1</h3>
-                        <p>Descubra as histórias inspiradoras das mulheres, suas conquistas, desafios e contribuições
-                            para o automobilismo.
+                        <p>Descubra as histórias inspiradoras das mulheres, suas conquistas e desafios na Fórmula 1.
                         </p>
-                        <button class="btn "><a href="/pages/atracoes.html">Saiba Mais</a></button>
+                        <button class="btn botao-destaque"><a href="/pages/atracoes.html">Saiba Mais</a></button>
                     </div>
                 </article>
+                <!-- cartao -->
+                <article class="cartao_atracao-index flexivel_coluna anima_zoom">
+                    <figure>
+                        <img src="/assets/atracao/ayrton.jpg" alt="foto ayrton senna" class="cartao_imagem">
+                        <!-- <figcaption>Carro Histórico da Fórmula 1</figcaption> -->
+                    </figure>
+                    <!-- conteudo do cartao -->
+                    <div class="cartao_conteudo flexivel_coluna-centro">
+                        <h3 class="subtitulo">Homenagem a Ayrton Senna</h3>
+                        <p>Descubra a trajetória de Ayrton Senna, seus grandes feitos na Fórmula 1.</p>
+                        <button class="btn botao-destaque"><a href="/pages/atracoes.html">Saiba Mais</a></button>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            </section>
+        <!-- Chamada Rápida para Visitação -->
+        <section id="visite" class="flexivel_coluna-centro">
+            <h2 class="titulo">
+                Venha viver a emoção da Fórmula 1 de perto!
+            </h2>
+
+            <p class="subtitulo">
+                Explore carros lendários, troféus históricos e <br> experiências imersivas no Museu F1.
+            </p>
+
+            <a href="/pages/contato.html" class="btn botao-destaque">
+                Planeje sua Visita
+            </a>
+        </section>
     </main>
     <!-- rodape -->
     <footer class="flexivel_coluna">
@@ -142,10 +117,10 @@
                 <!-- links redes sociais -->
                 <nav>
                     <ul class="flexivel">
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-twitter espaco_lado"></i></li>
-                        <li><i class="bi bi-instagram"></i></li>
-                        <li><i class="bi bi-youtube espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-facebook"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-twitter espaco_lado"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-instagram"></i></li>
+                        <li class="anima_zoom"><i class="bi bi-youtube espaco_lado"></i></li>
                     </ul>
                 </nav>
             </div>
@@ -154,13 +129,13 @@
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
-                    <li class="menu_link"><a href="../index.html">Início</a></li>
-                    <li class="menu_link"><a href="/pages/sobre.html">Sobre</a></li>
-                    <li class="menu_link"><a href="/pages/atracoes.html">Atrações</a></li>
-                    <li class="menu_link"><a href="/pages/contato.html">Contato</a></li>
+                    <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
+                    <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
                 </ul>
                 <!-- endereço do museu -->
-                <a href="#">
+                <a href="#" class="anima_zoom">
                     <address>
                         <strong>MuseuF1 Brasil</strong><br><br>
                         Av. Pole Position, 1234 – Bloco B<br>
