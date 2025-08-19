@@ -1,26 +1,27 @@
 :root {
     /* cores */
     --cor-primaria: #002E12;
-    --cor-accento: #FFB600;
+    --cor-secundaria: #FFB600;
     --cor-detalhe: #008C14;
     --cor-contraste: #EDEBD9;
     --cor-branco: #F3F3F3;
 }
 
 /* tipografia */
-.titulo h1 {
-    font-family: "Cinzel", serif;
-    font-size: clamp(1.75rem, 2.80vw, 2rem);
+.titulo,
+h1 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: clamp(1.5vw, 2.5vw, 3vw);
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     padding: 2rem 0;
 }
 
 .subtitulo {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: bold;
     font-style: normal;
     font-size: clamp(1.25rem, 2.5vw, 1.75rem);
     padding: 1.5rem 0;
@@ -46,7 +47,7 @@ p {
 }
 
 body {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-contraste);
     color: black;
     min-width: 100vh;
     scroll-behavior: smooth;
@@ -79,6 +80,11 @@ i {
     color: var(--cor-branco);
 }
 
+address {
+    font-style: normal;
+    transition: 0.3s ease;
+}
+
 /* estilo da pagina */
 .flexivel {
     display: flex;
@@ -91,12 +97,9 @@ i {
     align-items: center;
 }
 
-.flexivel_coluna {
-    display: flex;
-    flex-direction: column;
-}
-
+.flexivel_coluna,
 .flexivel_coluna-centro {
+    display: flex;
     flex-direction: column;
 }
 
@@ -115,6 +118,13 @@ i {
 .espaco_lado {
     padding: 0 3rem;
 }
+
+.hero_section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* botão */
 .btn {
     padding: 2% 4%;
@@ -122,15 +132,17 @@ i {
     text-align: center;
     font-weight: bold;
     border-radius: 20px;
-    transition: .3s ease;
+    border: 3px solid transparent;
+    transition: background-color 0.3s ease;
 }
+
 .botao-destaque {
     background-color: var(--cor-detalhe);
     color: white;
 }
 
 .botao-destaque:hover {
-    background-color: var(--cor-accento);
+    background-color: var(--cor-secundaria);
     border: 3px solid var(--cor-detalhe);
     color: black;
 }
@@ -142,7 +154,7 @@ i {
 }
 
 .botao-secundario:hover {
-    background-color: var(--cor-accento);
+    background-color: var(--cor-secundaria);
     border: 3px solid var(--cor-detalhe);
 }
 
@@ -152,16 +164,13 @@ i {
 }
 
 /* animação */
-.anima_zoom {
+.anima_zoom,
+.anima_diminuir {
     transition: transform 0.3s ease;
 }
 
 .anima_zoom:hover {
     transform: scale(1.1);
-}
-
-.anima_diminuir {
-    transition: transform 0.3s ease;
 }
 
 .anima_diminuir:hover {
@@ -171,7 +180,7 @@ i {
 /* cabeçalho */
 header {
     background-color: var(--cor-branco);
-    color: var(--cor-preto);
+    color: black;
     padding: 2rem 5rem;
     width: 100%;
     align-items: center;
@@ -187,11 +196,11 @@ header {
 
 header nav ul {
     gap: 10%;
-    color: var(--cor-preto);
+    color: black;
 }
 
 header nav ul li a {
-    color: var(--cor-preto);
+    color: black;
     font-size: 1.5rem;
     transition: border-bottom 0.3s ease;
 }
