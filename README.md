@@ -18,10 +18,19 @@ O projeto inclui:
 ### Cores Utilizadas
 ```css
 :root {
+    /* Cor principal: utilizada em títulos, cabeçalhos e elementos de destaque */
     --cor-primaria: #002E12;
+
+    /* Cor secundária: utilizada em botões, links e elementos interativos */
     --cor-secundaria: #FFB600;
+
+    /* Cor de detalhe: para ícones, destaques e pequenos elementos gráficos */
     --cor-detalhe: #008C14;
+
+    /* Cor de contraste: para fundos claros e suavizados */
     --cor-contraste: #EDEBD9;
+
+    /* Cor de base/branco: textos, fundos secundários e elementos neutros */
     --cor-branco: #F3F3F3;
 }
 ```
