@@ -54,15 +54,6 @@ O projeto inclui:
 
 - Fundo padronizado #EDEBD9 para suavidade e equilíbrio visual.
 
-## Estrutura de Pastas
-/css
-    confi-paadrao.css (reset, configuração padrão das páginas)
-    pages.css (estilo das páginas)
-/assets
-    ...
-index.html
-README.md
-
 ## Como Rodar
 
 ### Clone este repositório:
