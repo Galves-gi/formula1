@@ -1,0 +1,154 @@
+/*hover: Aplica hover só em dispositivos com mouse */
+@media screen and (hover: hover) {
+    .anima_zoom:hover {
+        transform: scale(1.1);
+    }
+
+    .anima_diminuir:hover {
+        transform: scale(0.9);
+    }
+
+    .linha_tempo-evento:hover {
+        box-shadow: 0 6px 15px rgba(0, 46, 18, 0.7);
+    }
+}
+
+/* celulares */
+@media screen and (min-width: 350px) and (max-width: 750px) {
+
+    /* estilo padrão */
+    .sm_flexivel-coluna {
+        flex-direction: column;
+        padding: 2% 4%;
+    }
+
+    .sm_reverter-flex {
+        flex-direction: column-reverse;
+        padding: 2% 4%;
+    }
+
+    .sm_itemflex-100 {
+        flex-basis: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section,
+    .cartao_index,
+    .texto_sobre,
+    .contato {
+        padding: 2% 5rem;
+    }
+
+    /* index */
+    header {
+        padding: 2rem 3rem;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button,
+    .menu {
+        display: block;
+        max-width: 70%;
+    }
+
+    /* rodape */
+    .img_patrocinadores {
+        max-width: 15%;
+    }
+
+    footer section div nav ul {
+        padding: 0;
+        gap: 5%;
+    }
+
+    /*pagina index:  cartao de atração */
+    /*index: hero section */
+    .hero_section_index-frase,
+    .hero_section_sobre-frase,
+    .hero_section_atracao-frase,
+    .hero_section_contato-frase {
+        width: 95%;
+        height: 30%;
+    }
+
+    .hero_section_index-frase>h1,
+    .hero_section_sobre-frase>h1,
+    .hero_section_atracao-frase>h1,
+    .hero_section_contato-frase>h1,
+    .hero_section_contato-frase>h1 {
+        font-size: clamp(1.8rem, 1.8vw, 1.8rem);
+        z-index: 1;
+        text-align: center;
+    }
+
+    .hero_section-btn {
+        justify-content: center;
+    }
+
+    .cartao_atracao-index {
+        width: 100vw;
+    }
+
+    /*index: visite  */
+    #visite {
+        background-attachment: scroll;
+    }
+
+    /* sobre */
+    .linha_tempo-img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .galeria {
+        padding: 0 0 5rem 0;
+    }
+
+    .galeria-img {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    /* pagina: contato */
+    .contato {
+        gap: 1%;
+    }
+
+    .rede-contato {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+}
+
+/* tablet / desktop */
+@media screen and (min-width: 750px) and (max-width: 1120px) {
+
+    /* hero section */
+    .hero_section_index-frase>h1,
+    .hero_section_sobre-frase>h1,
+    .hero_section_atracao-frase>h1,
+    .hero_section_contato-frase>h1,
+    .hero_section_contato-frase>h1 {
+        font-size: clamp(1.5rem, 2.6vw, 2rem);
+    }
+
+    /* pagina atrações */
+    .atracao_destaque {
+        padding: 2rem 5rem;
+    }
+
+    .atracao_destaque-texto {
+        height: 100%;
+    }
+
+    .texto_titulo {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+}

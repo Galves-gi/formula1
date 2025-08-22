@@ -1,16 +1,16 @@
 /* pagina index */
+header button,
+.menu {
+    display: none;
+}
+
 .hero_section-index {
     height: 100vh;
     background-image: url(/assets/img-fundo/ferrari.jpg);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .hero_section_index-frase {
     width: 40%;
-    height: 70%;
     padding: 2%;
     border-radius: 20px;
 
@@ -36,7 +36,7 @@
 }
 
 .hero_section-btn a {
-    font-size: clamp(0.9vw, 1.3vw, 2vw);
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 /*index:  cartao de atração */
@@ -48,13 +48,13 @@
 }
 
 .cartao_index>h2 {
-    font-size: clamp(1.5vw, 2vw, 2.5vw);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     text-align: center;
     height: 15%;
 }
 
 .cartao_index>div {
-    gap: 5%;
+    gap: 5rem;
 }
 
 .cartao_atracao-index {
@@ -95,12 +95,17 @@
 #visite {
     height: 50%;
     padding: 5% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(/assets/img-fundo/museu.jpg);
     background-attachment: fixed;
 }
 
 #visite h2,
 #visite h2+p {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    ;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -111,10 +116,6 @@
     height: 100vh;
     padding: 5% 10%;
     background-image: url(/assets/img-fundo/bg-car\ antigo.jpg);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .hero_section_sobre-frase {
@@ -131,14 +132,13 @@
 }
 
 .hero_section_sobre-frase h1 {
-    font-size: clamp(1.5vw, 2.1vw, 3vw);
-    z-index: 1;
-    text-align: center;
     color: var(--cor-secundaria);
 }
 
 /* sobre: texto */
 .texto_sobre {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    ;
     padding: 0 10rem;
 }
 
@@ -183,8 +183,7 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: var(--cor-contraste);
+    height: 100%;
 }
 
 .galeria-img {
@@ -197,10 +196,6 @@
     height: 100vh;
     padding: 5%;
     background-image: url(/assets/img-fundo/bg-car.jpg);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .hero_section_atracao-frase {
@@ -219,14 +214,11 @@
 
 .hero_section_atracao-frase h1 {
     color: white;
-    font-size: clamp(1.5vw, 2.1vw, 3vw);
-    z-index: 1;
-    text-align: center;
 }
 
 /*atrações: cartao de atrações */
 .atracao_destaque {
-    height: 100vh;
+    height: 100%;
     padding: 2rem 10rem;
 }
 
@@ -235,13 +227,15 @@
 }
 
 .atracao_destaque-texto {
-    height: 100%;
+    height: 80vh;
     gap: 3rem;
     justify-content: center;
 }
-.texto_titulo{
+
+.texto_titulo {
     font-size: clamp(2vw, 3vw, 4vw);
 }
+
 .atracao_destaque-texto>a {
     width: 50%;
 }
@@ -251,10 +245,6 @@
     height: 100vh;
     padding: 5%;
     background-image: url(/assets/img-fundo/bg-ayrton.jpg);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .hero_section_contato-frase {
@@ -273,16 +263,14 @@
 
 .hero_section_contato-frase>h1 {
     color: white;
-    font-size: clamp(1.5vw, 3vw, 5vw);
-    z-index: 1;
-    text-align: center;
 }
 
 /* formulario */
 .contato {
-    height: 100vh;
-    padding: 0 5rem;
+    height: 100%;
+    padding: 3% 5rem;
     gap: 5rem;
+    justify-content: space-between;
     background-color: var(--cor-contraste);
 }
 
@@ -308,4 +296,11 @@ textarea {
 .rede-contato {
     color: var(--cor-detalhe);
     font-size: 1.8rem;
+}
+
+iframe {
+    border: none;
+    padding: 0 3rem;
+    max-width: 95%;
+    width: 100%;
 }

@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <title>Museu F1 - Sobre</title>
 </head>
 
@@ -28,6 +31,9 @@
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn">
+            <img src="/assets/menu.png" alt="img menu" class="menu">
+        </button>
     </header>
 
     <!-- hero section -->
@@ -102,7 +108,7 @@
         </section>
 
         <!-- galeria -->
-        
+
         <figure class="galeria">
             <h2 class="subtitulo texto-centro">Galeria</h2>
             <img src="/assets/galeria/capacete.jpg" alt="capacete de ayrton" class="galeria-img anima_diminuir">
@@ -117,9 +123,9 @@
 
     <!-- rodape -->
     <footer class="flexivel_coluna">
-        <section class="flexivel">
+        <section class="flexivel sm_flexivel-coluna">
             <!-- primeiro item flex -->
-            <div class="flexivel_coluna-centro itemflex-50">
+            <div class="flexivel_coluna-centro itemflex-50 sm_itemflex-100  espaco_top ">
                 <!-- logo -->
                 <img src="/assets/logo.png" alt="logo do museuf1" class="logo_rodape">
                 <!-- links redes sociais -->
@@ -133,7 +139,7 @@
                 </nav>
             </div>
             <!-- segundo item flex -->
-            <nav class="flexivel_linha-centro itemflex-50">
+            <nav class="flexivel_linha-centro itemflex-50 sm_itemflex-100 espaco_top">
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
@@ -154,8 +160,8 @@
             </nav>
         </section>
         <!-- imagens dos patrocinadores -->
-        <section class="flexivel_linha-centro">
-            <h3>Patrocinadores</h3>
+        <section class="flexivel_linha-centro quebra-flex">
+            <!--  <h3>Patrocinadores</h3> -->
             <img src="/assets/patrocinos/claro.webp" alt="logo claro" class="img_patrocinadores">
             <img src="/assets/patrocinos/american_express.svg" alt="logo american_express" class="img_patrocinadores">
             <img src="/assets/patrocinos/gerdau.svg" alt="logo claro" class="img_patrocinadores">

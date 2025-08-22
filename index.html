@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <title>Museu F1</title>
 </head>
 
@@ -29,6 +30,10 @@
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn">
+            <img src="/assets/menu.png" alt="img menu" class="menu">
+        </button>
+
     </header>
     <!-- hero section -->
     <article class="hero_section hero_section-index">
@@ -44,9 +49,9 @@
     <!-- conteudo -->
     <main>
         <!-- cartao de atrações-->
-        <section class="cartao_index">
+        <section class="cartao_index sm_flexivel-coluna">
             <h2 class="subtitulo espaco_top">Conheça Nossas Atrações</h2>
-            <div class="flexivel_linha-centro">
+            <div class="flexivel_linha-centro sm_flexivel-coluna">
                 <!-- cartao -->
                 <article class="cartao_atracao-index flexivel_coluna anima_zoom">
                     <figure>
@@ -56,8 +61,7 @@
                     <!-- conteudo do cartao -->
                     <div class="cartao_conteudo flexivel_coluna-centro">
                         <h3 class="subtitulo">O Carro que Fez História</h3>
-                        <p>Explore o icônico carro McLaren pilotado por Ayrton Senna durante suas vitórias
-                            lendárias.
+                        <p>Explore o icônico carro McLaren pilotado por Ayrton Senna.
                         </p>
                         <button class="btn botao-destaque"><a href="/pages/atracoes.html">Saiba Mais</a></button>
                     </div>
@@ -93,7 +97,7 @@
         </section>
 
         <!-- Chamada Rápida para Visitação -->
-        <section id="visite" class="hero_section flexivel_coluna-centro">
+        <section id="visite" class=" flexivel_coluna-centro">
             <h2 class="titulo">
                 Venha viver a emoção da Fórmula 1 de perto!
             </h2>
@@ -109,9 +113,9 @@
     </main>
     <!-- rodape -->
     <footer class="flexivel_coluna">
-        <section class="flexivel">
+        <section class="flexivel sm_flexivel-coluna">
             <!-- primeiro item flex -->
-            <div class="flexivel_coluna-centro itemflex-50">
+            <div class="flexivel_coluna-centro itemflex-50 sm_itemflex-100 espaco_top ">
                 <!-- logo -->
                 <img src="/assets/logo.png" alt="logo do museuf1" class="logo_rodape">
                 <!-- links redes sociais -->
@@ -125,7 +129,7 @@
                 </nav>
             </div>
             <!-- segundo item flex -->
-            <nav class="flexivel_linha-centro itemflex-50">
+            <nav class="flexivel_linha-centro itemflex-50 sm_itemflex-100 espaco_top">
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
@@ -146,8 +150,8 @@
             </nav>
         </section>
         <!-- imagens dos patrocinadores -->
-        <section class="flexivel_linha-centro">
-            <h3>Patrocinadores</h3>
+        <section class="flexivel_linha-centro quebra-flex">
+            <!--  <h3>Patrocinadores</h3> -->
             <img src="/assets/patrocinos/claro.webp" alt="logo claro" class="img_patrocinadores">
             <img src="/assets/patrocinos/american_express.svg" alt="logo american_express" class="img_patrocinadores">
             <img src="/assets/patrocinos/gerdau.svg" alt="logo claro" class="img_patrocinadores">

@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
     <title>Museu F1 - Atrações</title>
 </head>
 
@@ -28,6 +32,9 @@
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn">
+            <img src="/assets/menu.png" alt="img menu" class="menu">
+        </button>
     </header>
 
     <!-- hero section -->
@@ -40,7 +47,7 @@
     <main>
         <h1 class="subtitulo texto-centro espaco_top texto_titulo">Atrações em Destaque</h1>
         <!-- sessao atração destaque -->
-        <section class="atracao_destaque flexivel_linha-centro">
+        <section class="atracao_destaque flexivel_linha-centro sm_flexivel-coluna">
             <figure class="itemflex-50">
                 <img src="/assets/atracao/ayrton.jpg" alt="Foto de ayrton senna segurando o capacete" loading="lazy">
                 <figcaption>Ayrton Senna segurando seu capacete icônico, símbolo de determinação e paixão pelo
@@ -62,7 +69,7 @@
         </section>
 
         <!-- sessao atração destaque -->
-        <section class="atracao_destaque flexivel_linha-centro">
+        <section class="atracao_destaque flexivel_linha-centro sm_reverter-flex">
             <div class="atracao_destaque-texto itemflex-50 flexivel_coluna">
                 <h2>Três Lendas, Um País</h2>
                 <p>
@@ -84,7 +91,7 @@
         </section>
 
         <!-- sessao atração destaque -->
-        <section class="atracao_destaque flexivel_linha-centro">
+        <section class="atracao_destaque flexivel_linha-centro sm_flexivel-coluna">
             <figure class="itemflex-50">
                 <img src="/assets/atracao/felipe massa.jpg" alt="Foto de Felipe Massa segurando o troféu"
                     loading="lazy">
@@ -109,7 +116,7 @@
         <!-- cartao atraçoes temporarias-->
         <h1 class="subtitulo texto-centro espaco_top texto_titulo">Conheça Nossas Atrações Temporárias</h1>
         <!-- sessao atração destaque -->
-        <section class="atracao_destaque flexivel_linha-centro">
+        <section class="atracao_destaque flexivel_linha-centro sm_flexivel-coluna">
             <figure class="itemflex-50">
                 <img src="/assets/atracao/simulador.jpg"
                     alt="Visitante experimentando simulador de corrida de Fórmula 1" loading="lazy">
@@ -131,8 +138,9 @@
                 <a href="/pages/contato.html" class="btn botao-destaque">Retirar Ingressos</a>
             </div>
         </section>
+
         <!-- sessao atração destaque -->
-        <section class="atracao_destaque flexivel_linha-centro">
+        <section class="atracao_destaque flexivel_linha-centro sm_reverter-flex">
             <div class="atracao_destaque-texto itemflex-50 flexivel_coluna">
                 <h2>Mulheres na Fórmula 1</h2>
                 <p>
@@ -156,7 +164,8 @@
             </figure>
 
         </section>
-        <section class="atracao_destaque flexivel_linha-centro">
+
+        <section class="atracao_destaque flexivel_linha-centro sm_flexivel-coluna">
             <!-- imagem -->
             <figure class="itemflex-50">
                 <img src="/assets/atracao/car antigo.jpg" alt="Carro antigo de Fórmula 1 em exposição no museu"
@@ -172,7 +181,8 @@
                     tecnológicas, designs revolucionários e corridas memoráveis que encantaram fãs ao redor do mundo.
                     Reviva a emoção de ver de perto máquinas que desafiaram limites de velocidade e engenharia,
                     eternizadas nas pistas e nos corações dos apaixonados por velocidade.
-                    <br><br><strong>Exibição:</strong> 15 de Ago até 20 de Out | <strong>Duração estimada:</strong> 45 min
+                    <br><br><strong>Exibição:</strong> 15 de Ago até 20 de Out | <strong>Duração estimada:</strong> 45
+                    min
                 </p>
                 <a href="/pages/contato.html" class="btn botao-destaque">Retirar Ingressos</a>
             </div>
@@ -180,9 +190,9 @@
     </main>
     <!-- rodape -->
     <footer class="flexivel_coluna">
-        <section class="flexivel">
+        <section class="flexivel sm_flexivel-coluna">
             <!-- primeiro item flex -->
-            <div class="flexivel_coluna-centro itemflex-50">
+            <div class="flexivel_coluna-centro itemflex-50 sm_itemflex-100  espaco_top ">
                 <!-- logo -->
                 <img src="/assets/logo.png" alt="logo do museuf1" class="logo_rodape">
                 <!-- links redes sociais -->
@@ -196,7 +206,7 @@
                 </nav>
             </div>
             <!-- segundo item flex -->
-            <nav class="flexivel_linha-centro itemflex-50">
+            <nav class="flexivel_linha-centro itemflex-50 sm_itemflex-100 espaco_top">
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
@@ -217,8 +227,8 @@
             </nav>
         </section>
         <!-- imagens dos patrocinadores -->
-        <section class="flexivel_linha-centro">
-            <h3>Patrocinadores</h3>
+        <section class="flexivel_linha-centro quebra-flex">
+            <!--  <h3>Patrocinadores</h3> -->
             <img src="/assets/patrocinos/claro.webp" alt="logo claro" class="img_patrocinadores">
             <img src="/assets/patrocinos/american_express.svg" alt="logo american_express" class="img_patrocinadores">
             <img src="/assets/patrocinos/gerdau.svg" alt="logo claro" class="img_patrocinadores">

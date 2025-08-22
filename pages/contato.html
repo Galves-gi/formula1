@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/config-padrao.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
     <title>Museu F1 - Contato</title>
 </head>
 
@@ -27,6 +31,9 @@
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn">
+            <img src="/assets/menu.png" alt="img menu" class="menu">
+        </button>
     </header>
 
     <!-- hero section -->
@@ -37,9 +44,9 @@
     </article>
 
     <!-- Seção Contato -->
-    <section class="contato flexivel">
+    <section class="contato flexivel sm_reverter-flex">
         <!-- Formulário de contato -->
-        <div class="itemflex-50">
+        <div class="itemflex-50 sm_itemflex-100 ">
             <h2 class="subtitulo texto-centro">Entre em Contato</h2>
             <form class="formulario flexivel_coluna">
                 <label for="nome">Nome</label>
@@ -57,7 +64,7 @@
         </div>
 
         <!-- Informações de contato -->
-        <div class="itemflex-50">
+        <div class="itemflex-50 sm_itemflex-100 ">
             <h2 class="subtitulo">Informações</h2>
             <address>
                 <p><strong>Museu F1 Elite</strong></p>
@@ -79,8 +86,8 @@
             <!-- mapa -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8165583784803!2d-43.939659425149635!3d-19.932133638374214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699dc4b5f2ffb%3A0x559a742d9e74e35b!2sCentro%20Cultural%20Banco%20do%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1755529046207!5m2!1spt-BR!2sbr"
-                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="espaco_top"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="espaco_top"></iframe>
         </div>
 
     </section>
@@ -88,9 +95,9 @@
 
     <!-- rodape -->
     <footer class="flexivel_coluna">
-        <section class="flexivel">
+        <section class="flexivel sm_flexivel-coluna">
             <!-- primeiro item flex -->
-            <div class="flexivel_coluna-centro itemflex-50">
+            <div class="flexivel_coluna-centro itemflex-50 sm_itemflex-100  espaco_top ">
                 <!-- logo -->
                 <img src="/assets/logo.png" alt="logo do museuf1" class="logo_rodape">
                 <!-- links redes sociais -->
@@ -104,7 +111,7 @@
                 </nav>
             </div>
             <!-- segundo item flex -->
-            <nav class="flexivel_linha-centro itemflex-50">
+            <nav class="flexivel_linha-centro itemflex-50 sm_itemflex-100 espaco_top">
                 <!-- links rapidos -->
                 <ul class="espaco_lado">
                     <li class="menu_link">Links Rápidos</li>
@@ -125,8 +132,8 @@
             </nav>
         </section>
         <!-- imagens dos patrocinadores -->
-        <section class="flexivel_linha-centro">
-            <h3>Patrocinadores</h3>
+        <section class="flexivel_linha-centro quebra-flex">
+            <!--  <h3>Patrocinadores</h3> -->
             <img src="/assets/patrocinos/claro.webp" alt="logo claro" class="img_patrocinadores">
             <img src="/assets/patrocinos/american_express.svg" alt="logo american_express" class="img_patrocinadores">
             <img src="/assets/patrocinos/gerdau.svg" alt="logo claro" class="img_patrocinadores">
