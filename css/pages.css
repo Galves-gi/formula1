@@ -43,14 +43,14 @@ header button,
 .cartao_index {
     background-color: var(--cor-contraste);
     height: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     padding: 0 5%;
 }
 
 .cartao_index>h2 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     text-align: center;
-    height: 15%;
+    height: 20%;
 }
 
 .cartao_index>div {
@@ -58,32 +58,37 @@ header button,
 }
 
 .cartao_atracao-index {
-    width: 20%;
-    height: 100%;
-    min-height: 70vh;
-    padding: 1%;
+    align-items: center;
+    flex: 0 1 25%;
+    height: 80vh;
+    padding: 1% 1% 2%;
     border-radius: 20px;
     border: 3px solid var(--cor-detalhe);
 }
 
-.cartao_imagem {
+figure.cartao_imagem {
     object-fit: cover;
+    object-position: center;
     max-width: 100%;
-    border-radius: 18px;
+    border-radius: 16px;
 }
 
 .cartao_conteudo {
     max-height: 100%;
+    justify-content: space-around;
 }
 
 .cartao_conteudo>h3 {
     font-size: 1.5rem;
     text-align: center;
+    height: 4em;
 }
 
 .cartao_conteudo>p {
+    height: 3em;
     font-size: 1rem;
     text-align: center;
+    overflow: hidden;
 }
 
 .cartao_conteudo>button {

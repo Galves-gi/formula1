@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,9 +31,20 @@
                 <li class="menu_link anima_zoom"><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
-        <button class="btn">
-            <img src="/assets/menu.png" alt="img menu" class="menu">
-        </button>
+
+        <!-- menu para celulares -->
+        <details class="menu">
+            <summary>
+                <img src="/assets/menu.png" alt="Abrir menu" class="menu_icon">
+            </summary>
+                <ul class="flexivel_coluna-centro">
+                    <li class="menu_link-summary anima_zoom"><a href="../index.html">Início</a></li>
+                    <li class="menu_link-summary anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>
+                    <li class="menu_link-summary anima_zoom"><a href="/pages/atracoes.html">Atrações</a></li>
+                    <li class="menu_link-summary anima_zoom"><a href="/pages/contato.html">Contato</a></li>
+                </ul>
+        </details>
+
 
     </header>
     <!-- hero section -->
@@ -66,6 +78,7 @@
                         <button class="btn botao-destaque"><a href="/pages/atracoes.html">Saiba Mais</a></button>
                     </div>
                 </article>
+                <!-- cartão -->
                 <article class="cartao_atracao-index flexivel_coluna anima_zoom">
                     <figure>
                         <img src="/assets/atracao/atracao mulheres na f1.jpg" alt="mulheres na f1"
@@ -129,9 +142,9 @@
                 </nav>
             </div>
             <!-- segundo item flex -->
-            <nav class="flexivel_linha-centro itemflex-50 sm_itemflex-100 espaco_top">
+            <nav class="flexivel_linha-centro sm_flexivel-coluna itemflex-50 sm_itemflex-100 espaco_top">
                 <!-- links rapidos -->
-                <ul class="espaco_lado">
+                <ul class="link-rapido">
                     <li class="menu_link">Links Rápidos</li>
                     <li class="menu_link anima_zoom"><a href="../index.html">Início</a></li>
                     <li class="menu_link anima_zoom"><a href="/pages/sobre.html">Sobre</a></li>

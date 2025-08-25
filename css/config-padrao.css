@@ -57,7 +57,7 @@ h3 {
 body {
     background-color: var(--cor-contraste);
     color: black;
-    min-width: 100vh;
+    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
@@ -87,6 +87,7 @@ figure img {
 
 i {
     color: var(--cor-branco);
+    padding: 0 5%;
 }
 
 address {
@@ -255,6 +256,11 @@ footer section {
 
 footer section div nav ul {
     gap: 5%;
+    margin-top: 2%;
+}
+
+.link-rapido {
+    margin-right: 5%;
 }
 
 footer h5 {
