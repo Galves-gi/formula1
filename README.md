@@ -59,3 +59,5 @@ O projeto inclui:
 ### Clone este repositório:
 
 git clone https://github.com/seu-usuario/nome-do-projeto.git
+
+## Acesse o site: https://formula1-kappa-six.vercel.app/
