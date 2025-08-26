@@ -1,4 +1,4 @@
-# MuseuF1 – HTML & CSS simples (sem responsividade)
+# MuseuF1 – HTML & CSS simples
 
 ## Objetivo
 Este projeto consiste em uma **página web institucional** desenvolvida com **HTML5 e CSS3 simples**, focando em **estética, semântica e experiência do usuário**. O site possui seções organizadas de forma clara: **Início, Sobre, Atrações e Contato**, com elementos visuais e interativos que valorizam a apresentação do conteúdo.
@@ -13,7 +13,7 @@ O projeto inclui:
 
 ## Tecnologias Utilizadas
 - **HTML5** – Estrutura semântica das páginas.
-- **CSS3** – Estilização, animações e responsividade básica.
+- **CSS3** – Estilização, animações e responsividade.
 
 ### Cores Utilizadas
 ```css
